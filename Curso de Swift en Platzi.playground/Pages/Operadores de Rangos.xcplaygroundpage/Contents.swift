@@ -46,5 +46,5 @@ let rangeTwo = numberOne..<numberTwo  // No incluye el ulitmo
 let rangeThree =  ...numberTwo   //Llega al último independiente del primero
     rangeThree.contains(-1)
 
-let rangeFour = numberOne...   //Toma el primer valor hasta el +infinito
+let rangeFour = numberOne...   //Toma el primer valor hasta el infinito
 rangeFour.contains(40)

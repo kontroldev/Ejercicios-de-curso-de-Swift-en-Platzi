@@ -5,5 +5,7 @@
         <page name='Operador ternario condicional'/>
         <page name='Operador de coalescencia nula'/>
         <page name='Operadores de Rangos'/>
+        <page name='Operadores logicos'/>
+        <page name='String'/>
     </pages>
 </playground>
