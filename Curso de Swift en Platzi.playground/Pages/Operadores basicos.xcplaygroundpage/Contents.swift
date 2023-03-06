@@ -24,14 +24,17 @@ if a == b {
 
 "Hello " + "World"
 
+//Dividendo entre divisor -> Dividendo es igual igual divisor por el cociente mas el resto.   Esto es el Algoritmo de EUCLIDES
 //D/d -> D == d*c+r
-9/4 //c
-9%4 //r
+9/4 //cociente
+9%4 //resto
 
 9 == 4*2+1
 
 
 -9%4 // -9 == -2*4 + (-1)
+
+//OPERADOR UNARIO
 
 let five = 5
 let minusFive = -five
@@ -44,6 +47,15 @@ var number = 5
 number += 3 //number = number + 3
 number -= 2 //number = number - 2
 
+
+//EJERCICIOS
+
+var number2 = 5
+//Aqui number2 es acumulalivo
+number2 += 3 //number2 = number2 + 3 
+number2 -= 2 //number2 = number2 -2
+number2 *= 2 //number2 = number2 * 2
+number2 /= 2 // number2 = number2 / 2
 
 /*
  Operador de asignacion
@@ -58,11 +70,52 @@ Operador aritmeticos
 % Resto de division (solo en enteros)
 
  
- Operadores de acumulacion
+ OPERADORES DE ACUMULACION
  += Suma acumulada
  -= Resta acumulada
  *= Multiplicacion acumulada
  /= Division acumulada
  
  */
+
+//OPERADOPRES COMPARATIVOS
+
+1 == 1
+1 == 2
+1 != 2
+2 > 1
+2 < 1
+2 >= 1
+
+
+a == b //Igual que
+a != b // No igual que
+a > b  // mayor que
+a < b  // menor que
+a >= b //mayor o igual que
+a <= b //menor o igual que
+
+//let name = "Juan Gabriel"
+let name = "Ricardo Celis"
+
+if name == "Juan gabriel"{
+    print("Bienvenido \(name), eres invitado a la fiesta")
+}else{
+    print("Cuidado, ha aparecido un \(name) salvaje")
+}
+
+
+//Tambien se puede usar en las TUPLAS.
+
+(1, "Juan Gabriel") < (2, "Ricardo Celis")
+(3, "Juan Gabriel") < (3, "Ricardo Celis")
+(3, "Ricardo celis") < (3, "Juan Gabriel")
+(4, "perro") == (4, "perro")  //("perro", false) == ("perro" , true) No se pueden hacer comparaciones con BOLEANOS
+
+
+
+//Ejercicios
+(44, "Raúl Gallego") < (31, "Juan Gabriel")
+(44, "Raúl Gallego") > (31, "Juan Gabriel")
+(44, "Raúl Gallego") == (31, "Juan Gabriel")
  
