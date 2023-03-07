@@ -7,5 +7,6 @@
         <page name='Operadores de Rangos'/>
         <page name='Operadores logicos'/>
         <page name='String'/>
+        <page name='Caracteres'/>
     </pages>
 </playground>
