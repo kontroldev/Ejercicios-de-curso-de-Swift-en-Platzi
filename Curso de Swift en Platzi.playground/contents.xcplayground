@@ -8,5 +8,8 @@
         <page name='Operadores logicos'/>
         <page name='String'/>
         <page name='Caracteres'/>
+        <page name='Indice de String'/>
+        <page name='Prefijos y sufijos'/>
+        <page name='Representacion UNICODE'/>
     </pages>
 </playground>
