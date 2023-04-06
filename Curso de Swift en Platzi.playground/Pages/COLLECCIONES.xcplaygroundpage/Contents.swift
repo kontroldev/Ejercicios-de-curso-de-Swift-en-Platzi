@@ -5,13 +5,13 @@ import Foundation
 /*UN ARRAY es una colección ORDENADA de elementos del mismo tipo.
  Cada elemento, tiene una posición en el array, que se puede utilizar para acceder a ese elemento.*/
 
-var someInts = [Int]() //Esto seria un Arrays vacio.
+var someInts = [Int]() //Esto seria un Arrays vacia.
 
 someInts.count
 someInts.append(31) // Aqui le añadimos un valor a un elemento.
 someInts.count // Aqui vemos como ver cuantos elementoshay dentro de un Array.
 
-someInts = [] //Esto seria una forma de vacia un Array.
+someInts = [] //Esto seria una forma de vacia un Array o vacia un ARRAY.
 
 var someDoubles = Array(repeating: 3.141592, count: 3)//La forma de repetir un elemento un determinado numero de veces
 someDoubles.count
@@ -141,7 +141,65 @@ let cityAnimales:Set = ["🐀", "🕊️"]
 
 houseAnimals.isSubset(of: farmAniumals) // Let 1, es un subconjuntos de let 2: ➡️ el perro y el gato, esta contenido en los dos conjuntos.
 farmAniumals.isSuperset(of: houseAnimals)  //Let 2 es un super conjunto de let 1:➡️
-farmAniumals.isDisjoint(with: cityAnimales)  //A y B son disjuntos si su interseccion es vacía.    //REPASAR!!!!
+farmAniumals.isDisjoint(with: cityAnimales)  //A y B son disjuntos si su interseccion es vacía.    //REPASAR!!!! ⬅️↖️
 
 
 
+//DICCIONARIO.
+/*Un diccionario es un tipo de colección que almacena datos como pares de clave-valor (Indice-Valor). Cada elemento en un diccionario está compuesto por una clave única y un valor asociado que puede ser de cualquier tipo de dato.*/
+/*Diferencias entre tuplas y diccionarios:
+ Las tuplas pueden o no tener una llave.
+ Las tuplas solo pueden contener una cantidad predefinida de valores
+ Las tuplas pueden combinar varios tipos de valores, mientras que los diccionarios tiene un solo tipo homogéneo.
+ //EJEMPLOS⬇️
+ TUPLAS⬇️
+ let persona = ("Juan", 30, true)
+DICCIONARIOS⬇️
+ var dictionary = ["Nombre: kontrol, Apellido: Dev, edad: 44"]*/
+
+var nameOfIntegers = [Int: String]() //Un diccionario vacio
+nameOfIntegers[15] = "quince"
+nameOfIntegers = [:] //Asi podemos vacia un Diccionario.
+
+var airPorts: [String: String] = ["YYZ": "Toronto", "DUB": "Dublin", "PMI": "Palma de Mallorca"]
+
+airPorts.count
+airPorts.isEmpty //Indica si el objeto está vacío o no.
+airPorts["LHR"] = "London City Airport" //Para añadir un dato mas al diccionario.
+airPorts
+airPorts["LHR"] = "London Hearthrow" //Esto cambio el valor al diccionario
+airPorts
+
+if let oldValue = airPorts.updateValue("Dublin Airport", forKey: "DUB") { //Esto sobre escribimos o actualizamos el DUB
+    print("El aeropuerto tenia antiguamnete el nombre de \(oldValue)")
+}
+airPorts
+
+if let airportName = airPorts["DUB"]{
+    print("El aeropuerto de DUB es: \(airportName)")
+}
+
+//ELIMINAR OBJETOS DENTRO DE UN DICCIONARIO⬇️
+airPorts["PMI"] = nil
+airPorts
+
+if let removedAirport = airPorts.removeValue(forKey: "DUB") { //Le indicamos una clave de un diccionario y si esta lo elimina.
+}
+airPorts
+
+
+//HACER BLUCLES DE LOS DICCIONARIOS⬇️
+for (key, value) in airPorts {  //Key se llevaria la clave del aeropuerto y value seria el nombre del aeropuerto.  ⬅️(Esto me deveuleve las clave y valor)
+    print("\(key) - \(value)")
+}
+
+for airportKey in airPorts.keys{ //Esto solo me devuelve, las claves de un diccionario
+    print(airportKey)
+}
+
+for airportName in airPorts.values{ //Esto solo de devuelve los valores de los diccionario.
+    print(airportName)
+}
+
+let airportKeys = [String](airPorts.keys.sorted()) //Esto no genera un ARRAY de todas las claves y las ordena con el comando .sorted
+let airportName = [String](airPorts.values.sorted()) //Esto no genera un ARRAY de todas los valores y las ordenara con el comando .sorted
