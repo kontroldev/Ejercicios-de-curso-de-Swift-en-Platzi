@@ -11,6 +11,7 @@
         <page name='Indice de String'/>
         <page name='Prefijos y sufijos'/>
         <page name='Representacion UNICODE'/>
-        <page name='COLLECCIONES'/>
+        <page name='COLECCIONES'/>
+        <page name='Sentencias de Control'/>
     </pages>
 </playground>
