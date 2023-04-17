@@ -199,4 +199,21 @@ default:
 }
 
 
+//CONTROL DE SENTENCIAS DE CONTROL - continue, break, fallthrough, return, throw
+
+let sentence = "las mentes grandes piensan igual"
+var filteredSentence = ""
+let characterToRemove:[Character] = ["a", "e", "i", "o", "u"]
+
+for ch in sentence {
+    if characterToRemove.contains(ch){  //La función ".contains" es un método que se utiliza para verificar si un objeto de una colección (como un array o un set) contiene un elemento específico.
+   continue
+    }  // ⬆️ Esta sentencia no haria nada y seguiria hacia abajo.
+    filteredSentence.append(ch)
+    if ch == "d" {
+        break
+    }
+}
+filteredSentence
+
 
