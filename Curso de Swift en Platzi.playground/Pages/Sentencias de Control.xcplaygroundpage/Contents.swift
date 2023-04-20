@@ -217,3 +217,43 @@ for ch in sentence {
 filteredSentence
 
 
+//FALLTHROUGH
+
+let integerToDescribe = 5
+var description = "El numero \(integerToDescribe) es"
+switch integerToDescribe {
+case 2, 3, 5, 7, 11, 13, 17, 19:
+    description += " un numero primo y" //Ejemplo 1: Una vez que caemos en el primer CASE ya no caemos en el default.
+    fallthrough
+default:
+    description += " un numero entero"
+}
+print(description)
+
+// RETURN Y GUARD
+
+var people = ["name": "Juan Gabriel", "age": 31, "isMale": true] as [String: Any]
+
+func testUserValidation(person:[String: Any]){
+    guard let surname = person["name"] else{    //Ejercicio: Cambiar name por surname
+        print("El nombre es desconocida")      //Ejercicio: cambiar el apellido
+        return
+    }
+    //Hasta aqui llega la variable surname
+    print(surname)
+    guard let age = person["age"] else {
+        print("La edad es desconocida")
+        return
+    }
+    print("La edad de la persona es \(age)")
+}
+testUserValidation(person: people)
+
+//MANEJO DE VERSIONES
+
+if #available(iOS 12, macOS 10.12, *){
+    //Ejecutar las acciones a lo iOS12+ y lo macOS10 y posterior
+}else{
+    //Mantener el codigo viejo con versiones anteriores a iOS, macOS...
+}
+

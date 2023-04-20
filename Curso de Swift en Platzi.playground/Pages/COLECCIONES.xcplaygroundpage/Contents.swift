@@ -79,7 +79,7 @@ Los sets se definen utilizando la sintaxis de corchetes, como se muestra a conti
 
 var letters = Set<Character>() //Asi se hace un SET vacio.
 letters.count
-letters.insert("a") // Y dee sta manera se añade valores a un SET.
+letters.insert("a") // Y de esta manera se añade valores a un SET.
 letters.insert("h")
 letters.insert("b")
 letters
