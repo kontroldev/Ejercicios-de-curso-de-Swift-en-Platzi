@@ -151,6 +151,8 @@ farmAniumals.isDisjoint(with: cityAnimales)  //A y B son disjuntos si su interse
  Las tuplas pueden o no tener una llave.
  Las tuplas solo pueden contener una cantidad predefinida de valores
  Las tuplas pueden combinar varios tipos de valores, mientras que los diccionarios tiene un solo tipo homogéneo.
+ 
+ 
  //EJEMPLOS⬇️
  TUPLAS⬇️
  let persona = ("Juan", 30, true)
@@ -183,7 +185,7 @@ if let airportName = airPorts["DUB"]{
 airPorts["PMI"] = nil
 airPorts
 
-if let removedAirport = airPorts.removeValue(forKey: "DUB") { //Le indicamos una clave de un diccionario y si esta lo elimina.
+if airPorts.removeValue(forKey: "DUB") != nil { //Le indicamos una clave de un diccionario y si esta lo elimina.
 }
 airPorts
 
