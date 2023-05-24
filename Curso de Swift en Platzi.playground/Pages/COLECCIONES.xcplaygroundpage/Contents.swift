@@ -205,3 +205,20 @@ for airportName in airPorts.values{ //Esto solo de devuelve los valores de los d
 
 let airportKeys = [String](airPorts.keys.sorted()) //Esto no genera un ARRAY de todas las claves y las ordena con el comando .sorted
 let airportName = [String](airPorts.values.sorted()) //Esto no genera un ARRAY de todas los valores y las ordenara con el comando .sorted
+
+
+/*NOTA
+ 
+ Diferencias entre un ARRAY y un SET
+ 
+-Orden: Un array mantiene un orden específico de los elementos que refleja cómo se agregaron al array. Por otro lado, un set no mantiene un orden específico de los elementos. No puedes acceder a los elementos de un set mediante índices como lo haces en un array.
+ 
+-Elementos duplicados: En un array, puedes tener elementos duplicados, lo que significa que el mismo valor puede aparecer varias veces en el array. En cambio, un set no permite elementos duplicados. Cada elemento en un set debe ser único.
+ 
+-Acceso a elementos: En un array, puedes acceder a los elementos individualmente utilizando índices basados en cero. Puedes obtener o modificar un elemento específico del array utilizando su posición en el índice. En un set, no puedes acceder a elementos individuales mediante índices. En cambio, utilizas métodos y operaciones específicas de conjunto para realizar acciones en el set en su conjunto.
+ 
+-Eficiencia en búsquedas: Los sets son particularmente eficientes para realizar búsquedas rápidas. Dado que los sets están diseñados internamente para optimizar la búsqueda de elementos únicos, ofrecen un rendimiento eficiente para determinar la existencia de un elemento en el set. Los arrays, por otro lado, pueden requerir una búsqueda lineal en la mayoría de los casos.
+ 
+-Operaciones de conjunto: Los sets en Swift ofrecen operaciones específicas de conjunto, como unión, intersección y diferencia, que son útiles para realizar comparaciones y manipulaciones de conjuntos de elementos. Los arrays no ofrecen estas operaciones directamente.
+ 
+En resumen, un array es una colección ordenada de elementos que permite duplicados y ofrece acceso mediante índices. Un set es una colección desordenada de elementos únicos que ofrece eficiencia en búsquedas y operaciones de conjunto especializadas. La elección entre un array y un set dependerá de las necesidades específicas de tu aplicación y de la forma en que desees organizar y acceder a tus datos.*/
